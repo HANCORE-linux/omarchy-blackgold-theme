@@ -17,4 +17,4 @@ To install this theme, simply use the omarchy-theme-install command:
 # Installation Neovim-Theme
 
 # Installation Waybar-Theme
-For my Waybar-Theme simply check my Link <link https://github.com/HANCORE-linux/Waybar-Theme-red-accents-.git/>
+For my Waybar-Theme simply check my Link https://github.com/HANCORE-linux/Waybar-Theme-red-accents-.git
