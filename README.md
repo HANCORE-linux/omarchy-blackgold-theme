@@ -12,9 +12,14 @@ To install this theme, simply use the omarchy-theme-install command:
 ```bash
   https://github.com/HANCORE-linux/omarchy-blackgold-theme.git
 ```
-# Installation Vesktop-Theme
+## Installation Vesktop-Theme
+For Vesktop users, you can install this theme by copying the theme file to your Vesktop themes directory:
+```bash
+  cp system24-blackgold.theme.css ~/.config/vesktop/themes/system24-blackgold.theme.css
+```
 
-# Installation Neovim-Theme
 
-# Installation Waybar-Theme
+## Installation Neovim-Theme
+
+## Installation Waybar-Theme
 For my Waybar-Theme simply check my Link https://github.com/HANCORE-linux/Waybar-Theme-red-accents-.git
