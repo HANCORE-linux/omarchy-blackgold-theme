@@ -23,3 +23,6 @@ Check Matte-Black https://github.com/tahayvr/matte-black-theme
 
 ## Waybar-Theme
 For my Waybar-Theme simply check my Link https://github.com/HANCORE-linux/Waybar-Theme-red-accents-.git
+
+### License
+MIT
