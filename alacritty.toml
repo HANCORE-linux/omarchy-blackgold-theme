@@ -18,7 +18,7 @@ text = "CellForeground"
 background = "#131314"
 
 [colors.normal]
-black = "#DFA650"
+black = "#0D0D0D"
 red = "#D35F5F"
 green = "#aa8859"
 yellow = "#C18C43"
