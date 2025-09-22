@@ -4,11 +4,14 @@
 -- ────────────────────────────────────────────────────────────
 
 return {
-  { "tahayvr/matteblack.nvim", lazy = false, priority = 1000 },
-  {
+	{
+		"bjarneo/pixel.nvim",
+		name = "pixel",
+	},
+	{
 		"LazyVim/LazyVim",
 		opts = {
-			colorscheme = "matteblack",
+			colorscheme = "pixel",
 		},
 	},
 }
