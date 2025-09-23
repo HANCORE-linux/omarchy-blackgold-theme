@@ -10,7 +10,7 @@ theme[main_bg]="#0D0D0D"
 theme[main_fg]="#e0dfdb"
 
 # Title color for boxes
-theme[title]="#BF863F"
+theme[title]="#D4AF37"
 
 # Highlight color for keyboard shortcuts
 theme[hi_fg]="#D35F5F"
@@ -19,7 +19,7 @@ theme[hi_fg]="#D35F5F"
 theme[selected_bg]="#BF863F"
 
 # Foreground color of selected item in processes box
-theme[selected_fg]="#EAEAEA"
+theme[selected_fg]="#e0dfdb"
 
 # Color of inactive/disabled text
 theme[inactive_fg]="#0D0D0D"
