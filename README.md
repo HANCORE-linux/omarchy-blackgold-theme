@@ -1,9 +1,11 @@
 # Black Gold
 Black Gold is a Theme with a elegant way of beauty for https://omarchy.org/. 
 
-# Screenshots
-<img width="2560" height="1440" alt="screenshot-2025-09-14_00-23-48" src="https://github.com/user-attachments/assets/402db200-bc72-4678-bc3f-1d18343ee739" />
+# Screenshots V1
 <img width="2560" height="1440" alt="screenshot-2025-09-15_00-20-44" src="https://github.com/user-attachments/assets/d3df618b-7929-4d2e-8e04-37cb8b196b50" />
+
+# Screenshots V2
+<img width="2560" height="1440" alt="screenshot-2025-09-25_14-39-22" src="https://github.com/user-attachments/assets/c93627c9-4ab5-44ce-a717-07f2649b908c" />
 
 
 
