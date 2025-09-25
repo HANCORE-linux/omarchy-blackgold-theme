@@ -1,8 +1,10 @@
 # Black Gold
 New Version of Black Gold Theme for https://omarchy.org/. 
+- Kitty & VScode not supported yet - working on it <br>
 
-# Screenshots V2
+# Screenshots Black Gold V2
 <img width="2560" height="1440" alt="screenshot-2025-09-25_14-39-22" src="https://github.com/user-attachments/assets/c93627c9-4ab5-44ce-a717-07f2649b908c" />
+<img width="2560" height="1440" alt="screenshot-2025-09-25_17-19-10" src="https://github.com/user-attachments/assets/b12b37be-5651-4333-a037-25203b610ce6" />
 
 
 
