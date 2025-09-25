@@ -1,4 +1,4 @@
-# Black Gold
+# Black Gold V2
 New Version of Black Gold Theme for https://omarchy.org/. 
 - Kitty & VScode not supported yet - working on it <br>
 
