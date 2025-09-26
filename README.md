@@ -26,6 +26,10 @@ For Vesktop users, you can install this theme by copying the theme file to your 
 - Check https://github.com/bjarneo/pixel.nvim <br>
 - Make sure Lazyvim is update to date type :Lazy <br>
 
+## VSCode-Theme
+- Check Golden Black Theme by Deus Ex https://themes.vscode.one/theme/Nos/AAAexhvZ <br>
+- Installation: Open VSCode > Click on Extensions > type: Deus Ex Theme
+
 ## Waybar-Theme
 For my Waybar-Theme simply check my Link https://github.com/HANCORE-linux/Waybar-Theme-red-accents-.git
 
