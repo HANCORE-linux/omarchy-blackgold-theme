@@ -27,7 +27,7 @@ cp system24-blackgold.theme.css ~/.config/vesktop/themes/system24-blackgold.them
 - Make sure Lazyvim is update to date type :Lazy <br>
 
 ## VSCode-Theme
-- Using Theme: - Black & Gold
+- Using Theme: Black & Gold
 - Using Extension-ID: PatrickDanilevici.black-gold
 - If Theme is not getting installed , do it manually: Open VSCode > Click on Extensions > type: Black & Gold
 
