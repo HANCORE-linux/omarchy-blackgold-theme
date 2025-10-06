@@ -13,12 +13,12 @@ New Version of Black Gold Theme for https://omarchy.org/.
 To install this theme, simply use the omarchy-theme-install command:
 
 ```bash
-  https://github.com/HANCORE-linux/omarchy-blackgold-theme.git
+omarchy-theme-install https://github.com/HANCORE-linux/omarchy-blackgold-theme.git
 ```
 ## Vesktop-Theme
 For Vesktop users, you can install this theme by copying the theme file to your Vesktop themes directory:
 ```bash
-  cp system24-blackgold.theme.css ~/.config/vesktop/themes/system24-blackgold.theme.css
+cp system24-blackgold.theme.css ~/.config/vesktop/themes/system24-blackgold.theme.css
 ```
 
 ## Neovim-Theme
