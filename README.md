@@ -1,6 +1,6 @@
 # Black Gold V2
 New Version of Black Gold Theme for https://omarchy.org/. 
-- VScode not supported yet - working on it <br>
+
 
 # Screenshots Black Gold V2
 <img width="2560" height="1440" alt="screenshot-2025-09-25_14-39-22" src="https://github.com/user-attachments/assets/c93627c9-4ab5-44ce-a717-07f2649b908c" />
@@ -27,8 +27,9 @@ cp system24-blackgold.theme.css ~/.config/vesktop/themes/system24-blackgold.them
 - Make sure Lazyvim is update to date type :Lazy <br>
 
 ## VSCode-Theme
-- Check Golden Black Theme by Deus Ex https://themes.vscode.one/theme/Nos/AAAexhvZ <br>
-- Installation: Open VSCode > Click on Extensions > type: Deus Ex Theme
+- Using Theme: - Black & Gold
+- Using Extension-ID: PatrickDanilevici.black-gold
+- If Theme is not getting installed , do it manually: Open VSCode > Click on Extensions > type: Black & Gold
 
 ## Waybar-Theme
 For my Waybar-Theme simply check my Link https://github.com/HANCORE-linux/Waybar-Theme-red-accents-.git
