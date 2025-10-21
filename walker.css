@@ -10,3 +10,18 @@
 @define-color border #7f680b;
 @define-color foreground #ebdbb2;
 @define-color background #0D0D0D;
+
+@define-color hover #4D574E;
+
+
+window .search-container,
+window .search {
+  background: alpha(@hover, 0.3);
+  color: @foreground;
+  border: 1px solid alpha(@border, 0.5);
+  border-radius: 12px;
+  padding: 8px 12px;
+  margin: 4px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
