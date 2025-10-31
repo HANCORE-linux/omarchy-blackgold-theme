@@ -5,13 +5,43 @@
 
 return {
 	{
-		"bjarneo/pixel.nvim",
-		name = "pixel",
+		"bjarneo/aether.nvim",
+		name = "aether-ghost-harmonized",
+		priority = 1000,
+		opts = {
+			disable_italics = false,
+			colors = {
+				-- Monotone shades (base00-base07)
+				base00 = "#0D0D0D", -- Background (deep charcoal)
+				base01 = "#1A1A1A", -- UI panels / splits
+				base02 = "#22221F", -- Selection / hover (slightly lighter, warm tone)
+				base03 = "#5B5442", -- Comments (warm gray-brown, blends in softly)
+				base04 = "#8E825C", -- Muted text / mid accents
+				base05 = "#D4C48A", -- Main text (softer beige than #EBDBB2)
+				base06 = "#E8DFAF", -- Bright text / emphasis
+				base07 = "#F6F1DD", -- Lightest tone for contrast (status, cursor)
+
+				-- Accent colors (base08-base0F)
+				base08 = "#B26E3B", -- Errors / red-brown (fits warm palette)
+				base09 = "#C18F3F", -- Constants / amber
+				base0A = "#A99448", -- Types / gold-olive
+				base0B = "#9C8A4C", -- Strings / desaturated gold
+				base0C = "#FF5C00", -- Support / muted olive-gold
+				base0D = "#BCA25C", -- Functions / brighter gold accent
+				base0E = "#E0C878", -- Keywords / soft highlight
+				base0F = "#7A673B", -- Deprecated / dark ochre
+			},
+		},
+		config = function(_, opts)
+			require("aether").setup(opts)
+			vim.cmd.colorscheme("aether")
+			require("aether.hotreload").setup()
+		end,
 	},
 	{
 		"LazyVim/LazyVim",
 		opts = {
-			colorscheme = "pixel",
+			colorscheme = "aether",
 		},
 	},
 }
