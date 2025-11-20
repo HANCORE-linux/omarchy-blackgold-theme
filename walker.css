@@ -25,3 +25,8 @@ window .search {
   font-size: 14px;
   font-weight: 500;
 }
+
+window .search-container text { 
+    color: @selected-text;
+    caret-color: @selected-text;
+}
