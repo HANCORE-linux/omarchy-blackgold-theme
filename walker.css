@@ -48,3 +48,8 @@ window .input {
     color: @text;
     border-radius: 0px;
 }
+
+window .search-container text { 
+    color: @selected-text;
+    caret-color: @selected-text;
+}
