@@ -5,13 +5,7 @@ Perfectly suited to the omarchy.org aesthetic — bold, minimal, and refined.
 
 
 # Screenshots Black Gold V2
-<img width="2560" height="1440" alt="screenshot-2025-09-25_14-39-22" src="https://github.com/user-attachments/assets/c93627c9-4ab5-44ce-a717-07f2649b908c" />
-<img width="2560" height="1440" alt="screenshot-2025-09-25_17-19-10" src="https://github.com/user-attachments/assets/b12b37be-5651-4333-a037-25203b610ce6" />
-<img width="2560" height="1440" alt="screenshot-2025-12-16_22-43-37" src="https://github.com/user-attachments/assets/fcab4f46-9008-48c9-892a-2da667890f6b" />
-
-
-
-
+<img width="2560" height="1440" alt="screenshot-2026-01-26_21-27-48" src="https://github.com/user-attachments/assets/8d6034a2-f2c2-4dd3-82aa-6796f23808d8" />
 
 # Installation Theme
 
@@ -25,16 +19,6 @@ For Vesktop users, you can install this theme by copying the theme file to your 
 ```bash
 cp system24-blackgold.theme.css ~/.config/vesktop/themes/system24-blackgold.theme.css
 ```
-
-## Neovim-Theme
-- Using https://github.com/bjarneo Pixel Theme which use the colors from terminal syntax <br>
-- Check https://github.com/bjarneo/pixel.nvim <br>
-- Make sure Lazyvim is update to date type :Lazy <br>
-
-## VSCode-Theme
-- Using Theme: Black & Gold
-- Using Extension-ID: PatrickDanilevici.black-gold
-- If Theme is not getting installed , do it manually: Open VSCode > Click on Extensions > type: Black & Gold
 
 ## Waybar-Theme
 For my Waybar-Theme simply check my Link https://github.com/HANCORE-linux/Waybar-Theme-red-accents-.git
