@@ -1,10 +1,10 @@
-# Black Gold V2
+# Black Gold
 A clean, high-contrast theme blending deep blacks with sharp gold highlights.
 Inspired by precision and elegance, built for distraction-free productivity.
 Perfectly suited to the omarchy.org aesthetic — bold, minimal, and refined. 
 
 
-# Screenshots Black Gold V2
+# Screenshots Black Gold
 <img width="2560" height="1440" alt="screenshot-2026-01-26_21-27-48" src="https://github.com/user-attachments/assets/8d6034a2-f2c2-4dd3-82aa-6796f23808d8" />
 
 # Installation Theme
