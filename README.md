@@ -4,7 +4,7 @@ Inspired by precision and elegance, built for distraction-free productivity.
 Perfectly suited to the omarchy.org aesthetic — bold, minimal, and refined. 
 
 
-# Screenshots Black Gold
+# Screenshots
 <img width="2560" height="1440" alt="screenshot-2026-01-26_21-27-48" src="https://github.com/user-attachments/assets/8d6034a2-f2c2-4dd3-82aa-6796f23808d8" />
 
 # Installation Theme
