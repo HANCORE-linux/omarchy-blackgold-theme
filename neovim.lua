@@ -1,11 +1,16 @@
 return {
 	{
 		"bjarneo/aether.nvim",
-		name = "aether-ghost-harmonized",
+		name = "aether",
+		branch = "v2",
 		priority = 1000,
 		opts = {
 			disable_italics = false,
 			colors = {
+				-- Background colors
+				bg = "#0D0D0D",
+				bg_dark = "#0D0D0D",
+				bg_highlight = "#b8b8b8",
 				-- Monotone shades (base00-base07)
 				base00 = "#0D0D0D", -- Background (deep charcoal)
 				base01 = "#1A1A1A", -- UI panels / splits

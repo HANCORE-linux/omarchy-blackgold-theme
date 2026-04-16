@@ -24,7 +24,7 @@ window .symbols {
 }
 
 window .box-wrapper {
-    background: alpha(@base, 0.95);
+    background: alpha(@base, 1);
     border: 2px solid alpha(@border, 0.9);
     border-radius: 0px;
     padding: 6px;
