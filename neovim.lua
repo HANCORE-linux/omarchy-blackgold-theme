@@ -1,35 +1,34 @@
 return {
 	{
 		"bjarneo/aether.nvim",
-		name = "aether",
 		branch = "v2",
+		name = "aether",
 		priority = 1000,
 		opts = {
-			disable_italics = false,
+			transparent = false,
 			colors = {
 				-- Background colors
 				bg = "#0D0D0D",
 				bg_dark = "#0D0D0D",
 				bg_highlight = "#b8b8b8",
-				-- Monotone shades (base00-base07)
-				base00 = "#0D0D0D", -- Background (deep charcoal)
-				base01 = "#1A1A1A", -- UI panels / splits
-				base02 = "#22221F", -- Selection / hover (slightly lighter, warm tone)
-				base03 = "#555955", -- Comments (warm gray-brown, blends in softly)
-				base04 = "#8E825C", -- Muted text / mid accents
-				base05 = "#D4C48A", -- Main text (softer beige than #EBDBB2)
-				base06 = "#E8DFAF", -- Bright text / emphasis
-				base07 = "#F6F1DD", -- Lightest tone for contrast (status, cursor)
 
-				-- Accent colors (base08-base0F)
-				base08 = "#C05757", -- Errors / red-brown (fits warm palette)
-				base09 = "#C18F3F", -- Constants / amber
-				base0A = "#A99448", -- Types / gold-olive
-				base0B = "#9C8A4C", -- Strings / desaturated gold
-				base0C = "#8FA095", -- Support / muted olive-gold
-				base0D = "#BCA25C", -- Functions / brighter gold accent
-				base0E = "#E0C878", -- Keywords / soft highlight
-				base0F = "#7A673B", -- Deprecated / dark ochre
+				-- Foreground colors
+				-- fg: Object properties, builtin types, builtin variables, member access, default text
+				fg = "#ebdbb2",
+				-- fg_dark: Inactive elements, statusline, secondary text
+				fg_dark = "#c8c4b4",
+				-- comment: Line highlight, gutter elements, disabled states
+				omment = "#555955",
+
+			-- Accent colors (base08-base0F)
+				red = "#C05757", -- Errors / red-brown (fits warm palette)
+				orange = "#C18F3F", -- Constants / amber
+				yellow = "#4D574E", -- Types / gold-olive
+				green = "#a3850e", -- Strings / desaturated gold
+				cyan = "#7A6A2C", -- Support / muted olive-gold
+				blue = "#6E6A58", -- Functions / brighter gold accent
+				purple = "#840084", -- Keywords / soft highlight
+				magenta = "#BFA75D", -- Deprecated / dark ochre
 			},
 		},
 		config = function(_, opts)
