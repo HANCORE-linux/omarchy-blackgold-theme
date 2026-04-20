@@ -21,11 +21,11 @@ return {
 				omment = "#555955",
 
 			-- Accent colors (base08-base0F)
-				red = "#C05757", -- Errors / red-brown (fits warm palette)
-				orange = "#C18F3F", -- Constants / amber
+				red = "#D35F5F", -- Errors / red-brown (fits warm palette)
+				orange = "#d1932f", -- Constants / amber
 				yellow = "#4D574E", -- Types / gold-olive
-				green = "#a3850e", -- Strings / desaturated gold
-				cyan = "#7A6A2C", -- Support / muted olive-gold
+				green = "#1c626a", -- Strings / desaturated gold
+				cyan = "#a3850e", -- Support / muted olive-gold
 				blue = "#6E6A58", -- Functions / brighter gold accent
 				purple = "#840084", -- Keywords / soft highlight
 				magenta = "#BFA75D", -- Deprecated / dark ochre
