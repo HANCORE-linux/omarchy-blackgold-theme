@@ -53,3 +53,7 @@ window .search-container text {
     color: @selected-text;
     caret-color: @selected-text;
 }
+
+child:selected .item-box {
+background-color: @base;
+}
