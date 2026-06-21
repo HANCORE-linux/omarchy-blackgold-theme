@@ -17,8 +17,8 @@ omarchy-theme-install https://github.com/HANCORE-linux/omarchy-blackgold-theme.g
 #### Waybar
 [LINK](https://github.com/HANCORE-linux/waybar-themes)
 
-#### Recommendations for 3rd-Party App Theming
-Using Bypass Theme-Hook script for GTK, Vesktop, Steam, Spotify etc [LINK](https://github.com/imbypass/omarchy-theme-hook)
+#### Theme-Hook-Manager
+[Link](https://github.com/OldJobobo/theme-hook-plugin-manager)
 
 
 ### License
