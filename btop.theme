@@ -24,16 +24,16 @@ theme[inactive_fg]="#4D574E"
 theme[graph_text]="#ebdbb2"
 
 # Background color of the percentage meters
-theme[meter_bg]="#5b4a08"
+theme[meter_bg]="#1f211f"
 
 # Misc colors for processes box (mini cpu graphs, details, status text)
 theme[proc_misc]="#BFA75D"
 
 # CPU, Memory, Network, Proc box outline colors (Gold & Bronze focus)
-theme[cpu_box]="#a3850e"
-theme[mem_box]="#a3850e"
-theme[net_box]="#a3850e"
-theme[proc_box]="#a3850e"
+theme[cpu_box]="#303531"
+theme[mem_box]="#303531"
+theme[net_box]="#303531"
+theme[proc_box]="#303531"
 
 # Box divider line and small boxes line color (Matching Inactive)
 theme[div_line]="#4D574E"
