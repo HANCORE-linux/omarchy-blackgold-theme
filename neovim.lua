@@ -1,52 +1,60 @@
 return {
-	{
-		"bjarneo/aether.nvim",
-		branch = "v2",
-		name = "aether",
-		priority = 1000,
-		opts = {
-			transparent = false,
-			colors = {
-				-- Background colors
-				bg = "#0D0D0D",
-				bg_dark = "#0D0D0D",
-				bg_highlight = "#767676",
+  {
+    "bjarneo/aether.nvim",
+    branch = "v3",
+    name = "aether",
+    priority = 1000,
+    opts = {
+      transparent = false,
+      colors = {
+        bg         = "#0d0d0d",
+        dark_bg    = "#0d0d0d",
+        darker_bg  = "#060606",
+        lighter_bg = "#1f1a12",
+        selection  = "#241f16",
 
-				-- Foreground colors
-				-- fg: Object properties, builtin types, builtin variables, member access, default text
-				fg = "#ebdbb2",
-				-- fg_dark: Inactive elements, statusline, secondary text
-				fg_dark = "#c8c4b4",
-				-- comment: Line highlight, gutter elements, disabled states
-				omment = "#555955",
+        fg         = "#ebdbb2",
+        dark_fg    = "#dcd3b1",
+        bright_fg  = "#f6f1dd",
+        muted      = "#8a8574",
 
-			-- Accent colors (base08-base0F)
-				red = "#D35F5F", -- Errors / red-brown (fits warm palette)
-				orange = "#d1932f", -- Constants / amber
-				yellow = "#4D574E", -- Types / gold-olive
-				green = "#1c626a", -- Strings / desaturated gold
-				cyan = "#a3850e", -- Support / muted olive-gold
-				blue = "#6E6A58", -- Functions / brighter gold accent
-				purple = "#840084", -- Keywords / soft highlight
-				magenta = "#BFA75D", -- Deprecated / dark ochre
-			},
-			on_highlights = function(hl, c)
-                -- If it's "too dark", use a lighter grey like #2a2a2a
-                hl.CursorLine = { bg = "#191919" } 
-                hl.CursorLineNr = { fg = c.orange, bold = true }
-            end,
-		},
-		config = function(_, opts)
-			require("aether").setup(opts)
-			vim.cmd.colorscheme("aether")
-			require("aether.hotreload").setup()
-			vim.api.nvim_set_hl(0, "CursorLine", { bg = "#262626" })
-		end,
-	},
-	{
-		"LazyVim/LazyVim",
-		opts = {
-			colorscheme = "aether",
-		},
-	},
+        red        = "#D35F5F",
+        orange     = "#d86a29",
+        yellow     = "#BBA84A",
+        green      = "#7C7C7C",
+        cyan       = "#108A8E",
+        blue       = "#7f9080",
+        purple     = "#c98ae0",
+        brown      = "#c9926b",
+
+        bright_red    = "#ee5340",
+        bright_yellow = "#d5b64b",
+        bright_green  = "#C2B280",
+        bright_cyan   = "#677D8E",
+        bright_blue   = "#6B7AA8",
+        bright_purple = "#8f6fd6",
+      },
+      on_highlights = function(hl, c)
+        hl.CursorLine = { bg = c.lighter_bg }
+        hl.CursorLineNr = { fg = c.yellow, bold = true }
+        hl.LspReferenceText = { bg = c.selection, fg = c.bright_fg }
+        hl.LspReferenceRead = hl.LspReferenceText
+        hl.LspReferenceWrite = hl.LspReferenceText
+        hl.SnacksPickerDir         = { fg = c.muted }
+        hl.SnacksPickerPathHidden  = { fg = c.muted }
+        hl.SnacksPickerPathIgnored = { fg = c.muted }
+        hl.SnacksPickerListCursorLine = { bg = c.lighter_bg }
+      end,
+    },
+    config = function(_, opts)
+      require("aether").setup(opts)
+      vim.cmd.colorscheme("aether")
+    end,
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "aether",
+    },
+  },
 }
