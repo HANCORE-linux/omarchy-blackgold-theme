@@ -1,0 +1,22 @@
+{
+  "name": "theme-blackgold",
+  "displayName": "Blackgold Theme",
+  "description": "Blackgold color theme",
+  "publisher": "local",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Blackgold",
+        "uiTheme": "vs-dark",
+        "path": "./themes/blackgold-color-theme.json"
+      }
+    ]
+  }
+}
