@@ -1,0 +1,149 @@
+# Omarchy Quattro shell surfaces for BlackGold.
+# Legacy Waybar, Walker, Mako, SwayOSD, and Hyprlock files remain authoritative
+# on Omarchy 3.8.x. These tokens reproduce their supported visual roles in the
+# Quattro shell without changing the legacy files.
+
+[bar]
+background = "#120F02"
+background-alpha = 1.0
+text = "#EBDBB2"
+active = "#F5BF03"
+scale-with-font = true
+size-horizontal = 26
+size-vertical = 28
+
+[hyprland]
+active-border = "#7F680B"
+active-border-foreground = "#EBDBB2"
+
+[controls]
+normal-color = "#EBDBB2"
+normal-fill-alpha = 0.03
+normal-border-width = 1
+normal-border-alpha = 0.35
+
+hover-cursor-color = "#BFA75D"
+hover-cursor-fill-alpha = 0.12
+hover-cursor-border-width = 2
+hover-cursor-border-alpha = 0.65
+
+focus-color = "#F5BF03"
+focus-fill-alpha = 0.14
+focus-border-width = 2
+focus-border-alpha = 0.90
+
+selected-color = "#A3850E"
+selected-fill-alpha = 0.20
+selected-border-width = 2
+selected-border-alpha = 0.78
+
+pressed-color = "#F5BF03"
+pressed-fill-alpha = 0.24
+selection-color = "#A3850E"
+selection-fill-alpha = 0.40
+
+[spacing]
+scale = 1.0
+scale-with-font = true
+xs = 2
+md = 3
+control-padding-y = 4
+panel-padding = 6
+
+[font]
+base-size = 12
+heading = 16
+icon-large = 24
+
+[popups]
+background = "#0D0D0D"
+background-alpha = 1.0
+text = "#BFA75D"
+border = "#7F680B"
+border-alpha = 0.90
+border-width = 2
+
+[tooltip]
+background = "#0D0D0D"
+background-alpha = 1.0
+text = "#EBDBB2"
+border = "#7F680B"
+border-alpha = 0.90
+border-width = 2
+
+[notifications]
+background = "#0D0D0D"
+background-alpha = 1.0
+text = "#BFA75D"
+border = "#7F680B"
+border-alpha = 1.0
+border-width = 2
+countdown = "#A3850E"
+
+[launcher]
+background = "#0D0D0D"
+background-alpha = 1.0
+text = "#6E6A58"
+border = "#7F680B"
+border-alpha = 0.90
+border-width = 2
+scrim = "#120F02"
+scrim-alpha = 0.0
+selected-background = "#4D574E"
+selected-background-alpha = 0.42
+selected-text = "#BFA75D"
+selected-border = "#BFA75D"
+selected-border-alpha = 0.90
+selected-border-width = 1
+
+[menu]
+background = "#0D0D0D"
+background-alpha = 1.0
+text = "#6E6A58"
+border = "#7F680B"
+border-alpha = 0.90
+border-width = 2
+scrim = "#120F02"
+scrim-alpha = 0.0
+selected-background = "#4D574E"
+selected-background-alpha = 0.42
+selected-text = "#BFA75D"
+selected-border = "#BFA75D"
+selected-border-alpha = 0.90
+selected-border-width = 1
+
+[polkit]
+background = "#0D0D0D"
+background-alpha = 1.0
+text = "#EBDBB2"
+text-error = "#D35F5F"
+border = "#7F680B"
+border-error = "#D35F5F"
+border-alpha = 1.0
+border-width = 2
+scrim = "#0D0D0D"
+scrim-alpha = 0.55
+accent = "#A3850E"
+
+[lock]
+background = "#0D0D0D"
+background-alpha = 1.0
+text = "#A3850E"
+placeholder = "#A3850EB3"
+text-error = "#D35F5F"
+border = "#A3850E"
+border-active = "#F5BF03"
+border-error = "#D35F5F"
+border-alpha = 1.0
+border-width = 2
+selection = "#F5BF03"
+selection-alpha = 0.45
+
+[image-picker]
+scrim = "#0D0D0D"
+scrim-alpha = 0.55
+text = "#EBDBB2"
+selected-border = "#F5BF03"
+selected-border-alpha = 1.0
+unselected-border = "#EBDBB2"
+unselected-border-alpha = 0.28
