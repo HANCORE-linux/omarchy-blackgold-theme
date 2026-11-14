@@ -1,0 +1,415 @@
+/* ============================================================
+   Omarchy "Blackgold" theme for Obsidian
+   Palette created from https://github.com/HANCORE-linux/omarchy-blackgold-theme/blob/V2-Blackgold/colors.toml
+   background #0D0D0D · foreground #ebdbb2 · gold #a3850e / #F5BF03
+   ============================================================ */
+
+.theme-dark, .theme-light {
+  /* ── Core colors ─────────────────────────────────────────── */
+  --background-primary: #0D0D0D;
+  --background-primary-alt: #120f02;
+  --background-secondary: #060606;
+  --background-secondary-alt: #0D0D0D;
+  --background-modifier-message: #120f02;
+  --text-normal: #ebdbb2;
+  --text-normal-strong: #F6F1DD;
+
+  /* ── Selection ───────────────────────────────────────────── */
+  --text-selection: #241f16;
+  --background-modifier-selection: #241f16;
+  --background-modifier-hover: #1f1a12;
+  --background-modifier-active-hover: #241f16;
+
+  /* ── Borders ─────────────────────────────────────────────── */
+  --background-modifier-border: color-mix(in srgb, #ebdbb2 22%, transparent);
+  --background-modifier-border-hover: color-mix(in srgb, #ebdbb2 38%, transparent);
+  --background-modifier-border-focus: #7f680b;
+
+  /* ── Semantic heading colors ─────────────────────────────── */
+  --text-title-h1: #D35F5F;
+  --text-title-h2: #F5BF03;
+  --text-title-h3: #BFA75D;
+  --text-title-h4: #c9926b;
+  --text-title-h5: #d86a29;
+  --text-title-h6: #807c6d;
+
+  /* ── Links and accents ───────────────────────────────────── */
+  --text-link: #BFA75D;
+  --text-link-hover: #F5BF03;
+  --text-accent: #F5BF03;
+  --text-accent-hover: #F5BF03;
+  --interactive-normal: #ebdbb2;
+  --interactive-hover: #F6F1DD;
+  --interactive-accent: #a3850e;
+  --interactive-accent-hover: #F5BF03;
+  --text-on-accent: #0D0D0D;
+  --text-on-accent-overrides: #0D0D0D;
+
+  /* ── Muted text ──────────────────────────────────────────── */
+  --text-muted: color-mix(in srgb, #ebdbb2 70%, transparent);
+  --text-faint: color-mix(in srgb, #ebdbb2 48%, transparent);
+
+  /* ── Code ────────────────────────────────────────────────── */
+  --code-normal: #BFA75D;
+  --code-background: #1f1a12;
+
+  /* ── Errors and success ──────────────────────────────────── */
+  --text-error: #D35F5F;
+  --text-error-hover: #e87979;
+  --text-success: #a3850e;
+
+  /* ── Tags: cream text on dark gold pill (≈11:1) ──────────── */
+  --tag-color: #F6F1DD;
+  --tag-background: #3d3213;
+  --tag-color-hover: #0D0D0D;
+  --tag-background-hover: #F5BF03;
+  --tag-border-color: color-mix(in srgb, #7f680b 85%, transparent);
+  --tag-border-color-hover: #F5BF03;
+  --tag-marker-color: #BFA75D;
+
+  /* ── Graph ───────────────────────────────────────────────── */
+  --graph-line: #3a362d;
+  --graph-node: #a3850e;
+  --graph-node-focused: #F5BF03;
+  --graph-node-tag: #BFA75D;
+  --graph-node-attachment: #6E6A58;
+  --graph-node-unresolved: #4D574E;
+}
+
+/* ============================================================
+   Headers
+   ============================================================ */
+.cm-header-1, .markdown-rendered h1 { color: var(--text-title-h1); }
+.cm-header-2, .markdown-rendered h2 { color: var(--text-title-h2); }
+.cm-header-3, .markdown-rendered h3 { color: var(--text-title-h3); }
+.cm-header-4, .markdown-rendered h4 { color: var(--text-title-h4); }
+.cm-header-5, .markdown-rendered h5 { color: var(--text-title-h5); }
+.cm-header-6, .markdown-rendered h6 { color: var(--text-title-h6); }
+
+.markdown-rendered h1,
+.markdown-rendered h2,
+.markdown-rendered h3 {
+  border-bottom-color: color-mix(in srgb, #ebdbb2 14%, transparent);
+}
+
+/* ============================================================
+   Tags — the important part
+   ============================================================ */
+
+/* Reading view / rendered markdown */
+.markdown-rendered a.tag,
+.markdown-rendered .tag,
+a.tag,
+.tag {
+  background-color: var(--tag-background);
+  color: var(--tag-color);
+  border: 1px solid var(--tag-border-color);
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.tag:hover,
+.markdown-rendered .tag:hover {
+  background-color: var(--tag-background-hover);
+  color: var(--tag-color-hover);
+  border-color: var(--tag-border-color-hover);
+}
+
+/* Live preview / source mode hashtags */
+.cm-s-obsidian span.cm-hashtag,
+.cm-hashtag,
+.cm-hashtag-begin,
+.cm-hashtag-end {
+  background-color: var(--tag-background);
+  color: var(--tag-color);
+  border: 1px solid var(--tag-border-color);
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.cm-s-obsidian span.cm-hashtag:hover,
+.cm-hashtag:hover {
+  background-color: var(--tag-background-hover);
+  color: var(--tag-color-hover);
+  border-color: var(--tag-border-color-hover);
+}
+
+/* Tag pane (list of all tags) */
+.tag-pane-tag-text {
+  color: var(--tag-color);
+  background-color: var(--tag-background);
+  border: 1px solid var(--tag-border-color);
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.tag-pane-tag:hover .tag-pane-tag-text {
+  background-color: var(--tag-background-hover);
+  color: var(--tag-color-hover);
+  border-color: var(--tag-border-color-hover);
+}
+
+.tag-pane-tag-count {
+  color: var(--text-normal-strong);
+  background-color: #1f1a12;
+  border: 1px solid color-mix(in srgb, #ebdbb2 18%, transparent);
+}
+
+.tag-pane-tag-count:hover {
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border-color: var(--interactive-accent-hover);
+}
+
+/* Tags inside properties / frontmatter pills */
+.multi-select-container .multi-select-pill,
+.metadata-property-value .multi-select-pill,
+.multi-select-pill {
+  background-color: var(--tag-background);
+  color: var(--tag-color);
+  border: 1px solid var(--tag-border-color);
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.multi-select-pill:hover {
+  background-color: var(--tag-background-hover);
+  color: var(--tag-color-hover);
+  border-color: var(--tag-border-color-hover);
+}
+
+/* Tag autocomplete suggestions */
+.prompt-suggestion.is-selected .tag,
+.suggestion .tag,
+.autocomplete .tag {
+  background-color: var(--tag-background-hover);
+  color: var(--tag-color-hover);
+  border-color: var(--tag-background-hover);
+}
+
+/* "Unresolved tag" indicator stays readable */
+.tag-unresolved,
+.cm-hashtag-begin.mod-unresolved {
+  color: var(--text-muted);
+}
+
+/* ============================================================
+   Code
+   ============================================================ */
+.markdown-rendered code,
+.markdown-rendered pre,
+.cm-s-obsidian code {
+  color: var(--code-normal);
+}
+
+.markdown-rendered code {
+  background-color: var(--code-background);
+  border: 1px solid color-mix(in srgb, #ebdbb2 12%, transparent);
+  border-radius: 3px;
+}
+
+.markdown-rendered pre {
+  background-color: var(--code-background);
+  border: 1px solid color-mix(in srgb, #ebdbb2 14%, transparent);
+}
+
+.markdown-rendered pre code {
+  border: none;
+  background: transparent;
+  color: var(--text-normal);
+}
+
+/* ============================================================
+   Syntax highlighting
+   ============================================================ */
+.cm-s-obsidian span.cm-keyword     { color: #D35F5F; }  /* red      */
+.cm-s-obsidian span.cm-atom        { color: #d86a29; }  /* orange   */
+.cm-s-obsidian span.cm-number      { color: #d86a29; }  /* orange   */
+.cm-s-obsidian span.cm-string      { color: #a3850e; }  /* gold     */
+.cm-s-obsidian span.cm-string-2    { color: #BFA75D; }  /* tan      */
+.cm-s-obsidian span.cm-comment     { color: #807c6d; }  /* muted    */
+.cm-s-obsidian span.cm-operator    { color: #BFA75D; }
+.cm-s-obsidian span.cm-def         { color: #F6F1DD; }
+.cm-s-obsidian span.cm-variable    { color: #ebdbb2; }
+.cm-s-obsidian span.cm-variable-2  { color: #c9926b; }
+.cm-s-obsidian span.cm-property    { color: #BFA75D; }
+.cm-s-obsidian span.cm-meta        { color: #7A6A2C; }
+.cm-s-obsidian span.cm-tag         { color: #a3850e; }
+.cm-s-obsidian span.cm-link        { color: #BFA75D; }
+.cm-s-obsidian span.cm-url         { color: #6E6A58; text-decoration: underline; }
+.cm-s-obsidian span.cm-qualifier   { color: #c9926b; }
+.cm-s-obsidian span.cm-builtin     { color: #BFA75D; }
+.cm-s-obsidian span.cm-error       { color: #D35F5F; }
+
+/* ============================================================
+   Links
+   ============================================================ */
+.markdown-rendered a,
+.markdown-rendered a.internal-link,
+.external-link {
+  color: var(--text-link);
+}
+
+.markdown-rendered a:hover,
+.markdown-rendered a.internal-link:hover {
+  color: var(--text-link-hover);
+}
+
+.markdown-rendered a.internal-link {
+  text-decoration: none;
+  border-bottom: 1px dotted color-mix(in srgb, #BFA75D 55%, transparent);
+}
+
+.markdown-rendered a.internal-link:hover {
+  border-bottom-color: var(--text-link-hover);
+}
+
+/* ============================================================
+   Blockquotes, tables, lists, checkboxes
+   ============================================================ */
+.markdown-rendered blockquote {
+  border-left-color: var(--interactive-accent);
+  background-color: #120f02;
+  color: var(--text-muted);
+}
+
+.markdown-rendered table th {
+  background-color: #120f02;
+  color: var(--text-title-h3);
+  border-color: color-mix(in srgb, #ebdbb2 16%, transparent);
+}
+
+.markdown-rendered table td {
+  border-color: color-mix(in srgb, #ebdbb2 10%, transparent);
+}
+
+.markdown-rendered tr:nth-child(even) td {
+  background-color: #0a0a0a;
+}
+
+.markdown-rendered ul li::marker,
+.markdown-rendered ol li::marker {
+  color: var(--interactive-accent);
+}
+
+.task-list-item-checkbox {
+  border-color: color-mix(in srgb, #ebdbb2 35%, transparent);
+  background-color: #1f1a12;
+}
+
+.task-list-item-checkbox:checked {
+  background-color: var(--interactive-accent);
+  border-color: var(--interactive-accent-hover);
+}
+
+/* ============================================================
+   Callouts
+   ============================================================ */
+.callout {
+  background-color: #120f02;
+  border-left: 3px solid var(--interactive-accent);
+  color: var(--text-normal);
+}
+
+.callout-title {
+  color: var(--text-title-h3);
+}
+
+.callout-icon,
+.callout-fold {
+  color: var(--text-title-h3);
+}
+
+.callout[data-callout="note"],
+.callout[data-callout="abstract"],
+.callout[data-callout="summary"] {
+  border-left-color: #a3850e;
+}
+
+.callout[data-callout="warning"],
+.callout[data-callout="caution"],
+.callout[data-callout="attention"] {
+  border-left-color: #d86a29;
+}
+
+.callout[data-callout="danger"],
+.callout[data-callout="error"],
+.callout[data-callout="failure"] {
+  border-left-color: #D35F5F;
+}
+
+.callout[data-callout="success"],
+.callout[data-callout="check"],
+.callout[data-callout="done"] {
+  border-left-color: #BFA75D;
+}
+
+/* ============================================================
+   UI: sidebar, active items, search, modals, tooltips
+   ============================================================ */
+.workspace-leaf.mod-active .workspace-leaf-header-title {
+  color: var(--interactive-accent-hover);
+}
+
+.nav-file-title.is-active,
+.nav-folder-title.is-active {
+  color: var(--interactive-accent-hover);
+}
+
+.search-result-file-title {
+  color: var(--interactive-accent-hover);
+}
+
+.search-input-container input {
+  background-color: #120f02;
+  border-color: var(--background-modifier-border);
+  color: var(--text-normal);
+}
+
+.search-input-container input:focus {
+  border-color: var(--background-modifier-border-focus);
+}
+
+.suggestion-item.is-selected,
+.suggestion-hotkey {
+  background-color: #241f16;
+  color: var(--text-normal-strong);
+}
+
+.modal,
+.modal .prompt {
+  background-color: #0D0D0D;
+  border: 1px solid color-mix(in srgb, #7f680b 70%, transparent);
+}
+
+.prompt-input,
+.modal input[type="text"],
+.modal textarea {
+  background-color: #120f02;
+  border-color: var(--background-modifier-border);
+  color: var(--text-normal);
+}
+
+.tooltip {
+  background-color: #0D0D0D;
+  border: 1px solid #7f680b;
+  color: var(--text-normal);
+}
+
+.tab-header.is-active {
+  color: var(--interactive-accent-hover);
+  border-bottom-color: var(--interactive-accent-hover);
+}
+
+/* Scrollbars */
+::-webkit-scrollbar-thumb {
+  background-color: #241f16;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #3d3213;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
